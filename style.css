@@ -1,0 +1,234 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Header{
+    
+    text-align: center;
+    height: 7vh;
+    line-height: 7vh;
+}
+
+.navbar{
+    position: fixed;
+    background-color: rgb(29, 28, 28);
+    z-index: 1;
+    width: 100%;
+    padding: 0px 7px;
+
+}
+
+.show-btn, .hide-btn{
+    font-size: 20px;
+    color: white;
+    line-height: 7vh;
+    display: none;
+
+}
+.show-btn:hover, .hide-btn:hover {
+    color: wheat;
+    transition: 0.4s;
+}
+
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -10;
+}
+
+@media(max-width: 800px){
+    .show-btn, .hide-btn{
+        display: block;
+    }
+    .navbar ul{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        transition: 0.7s;
+    }
+    #chk:checked~.xyz{
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .hide-btn{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .navbar ul li {
+        display: block;
+    }
+    .navbar ul li a{
+        display: block;
+    }
+}
+
+
+.show-btn{
+    float: right;
+}
+.Header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Header ul li{
+    list-style: none;
+    cursor: pointer;
+   
+}
+
+.Header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.Header ul li a:hover{
+    color: wheat;
+}
+
+.banner{
+    background: url(./Images/Banner.jpg) no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    line-height: 8vh;
+    margin: 20px 0px;
+    width: 100%;
+}
+.Section-1{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    justify-content: space-around;
+}
+
+  .box{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+}
+
+.box img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+
+}
+
+h1{
+    text-align: center;
+ }
+
+ .Section-2{
+     display: flex;
+     margin: 10px 0px;
+     padding: 0px 10px;
+     height: 500px;
+ }
+
+ .main{
+     text-align: left;
+     background-color: grey;
+     color: white;
+     margin: 10px 10px;
+     width: 50%;
+     padding: 10px;
+
+ }
+
+ .Article{
+     display: flex;
+     text-align: center;
+     color: black;
+     margin: 0px 0px;
+     width: 50%;
+     flex-direction: column;
+     
+    
+ }
+
+ #article-1{
+     background: url(./Images/project1.png) no-repeat center center/cover;
+ }
+
+ #article-2{
+     background: url(./Images/project2.png) no-repeat center center/cover;
+ }
+
+ #article-3{
+     background: url(./Images/project3.jpg) no-repeat center center/cover;
+ }
+
+ .inner-article{
+     margin: 10px 10px;
+     height: 160px;
+     line-height: 5vh;
+ }
+
+
+ .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.box3{
+    border-radius: 10px;
+    height: 550px;
+    width: 300px;
+    /* padding: 20px; */
+    background-color: rgb(218, 211, 211);
+    overflow: hidden;
+}
+.box3 img{
+    border-radius: 5px;
+    margin: 20px 30px;
+    /* padding: 10px 40px; */
+    height: 100px;
+    width: 230px;
+    /* justify-content: center; */
+}
+.box3 h3{
+    /* padding: 10px 45px; */
+    text-align: center;
+}
+.box3 p{
+    padding: 20px;
+    text-align:justify;
+}
+.box3 .btn{
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 20px;
+    width: 250px;
+    height: 25px;
+}
+.box3 .btn a{
+    text-decoration: none;
+    color: white;
+}
+
+ .footer{
+    background-color:plum;
+    text-align: center;
+    color: white;
+    height: 15vh;
+    line-height: 5vh;
+    margin: 10px 0px;
+}
+ 
+     
+ 
